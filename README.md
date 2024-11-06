@@ -1,6 +1,12 @@
 ## MIDOKURA SKILLS EXERCISE
 
-This is an exercise for midokura made by Cristobal Pio using VS CODE in java.
+This is an exercise for midokura made by Cristobal Pio using VS CODE in java/mvn.
+Java 17.
+mvn 3.8.8.
+
+mvn compile: to compile solution
+mvn test: to launch tests
+
 The time spent for solving it was 2h20min (with a terrible headache).
 
 Analysis of the methods:

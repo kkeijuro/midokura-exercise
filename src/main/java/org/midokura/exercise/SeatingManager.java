@@ -82,7 +82,10 @@ public class SeatingManager {
             this.occupied_tables.get(table.size).add(table);
     }
 
-    /* Whether seated or not, the group leaves the restaurant. */
+    /**
+     *  Whether seated or not, the group leaves the restaurant. 
+     * @param group the group that leaves.
+     * */
     public synchronized void leaves(CustomerGroup group) {
         Table table = locate(group);
         if (table != null) {
@@ -105,8 +108,11 @@ public class SeatingManager {
             group.is_waiting = false;
         }
     }
-    /* Return the table at which the group is seated, or null if
-    they are not seated (whether they're waiting or already left). */
+    /**
+     *  Return the table at which the group is seated, or null if
+    they are not seated (whether they're waiting or already left). 
+    * @param group the group to locate
+    */
     public Table locate(CustomerGroup group) {
         SortedMap<Integer, LinkedList<Table>> tables = getOccupiedTablesFromSize(group.size);
         for(LinkedList<Table> table_list : tables.values()) {
