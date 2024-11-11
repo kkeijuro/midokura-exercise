@@ -25,7 +25,7 @@ easilly accessed.
 With tree map we could use the tailMap to begin iterating in the middle of the Tree,
 this means that we can begin only where CustomerGroup fits.
 
-for customers_waiting I decided using a LinkedList, iterating is O(n) but inserting/removing is O(1). Maybe othe collections would fit but I decided using them
+for customers_waiting I decided using a LinkedList, iterating is O(n) but inserting/removing is O(1). Maybe other collections would fit but I decided using them
 and random access is not needed.
 
 In detail, if we dismiss the TreeMap accessing, which would be O(log) here are the
