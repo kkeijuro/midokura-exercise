@@ -28,7 +28,7 @@ this means that we can begin only where CustomerGroup fits.
 for customers_waiting I decided using a LinkedList, iterating is O(n) but inserting/removing is O(1). Maybe other collections would fit but I decided using them
 and random access is not needed.
 
-In detail, if we dismiss the TreeMap accessing, which would be O(log) here are the
+In detail, if we dismiss the TreeMap accessing (we dismiss because only 4 sizes tables will be avaibable), which would be O(log) here are the
 algorithm time: <br>
 <br>
 arrive is O(1) <br>
